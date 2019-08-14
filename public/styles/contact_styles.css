@@ -112,7 +112,7 @@ p a:hover::after
 ::selection
 {
 	background: #fde0db;
-	color: #ff4200;
+	color: #0b2e13;
 }
 p::selection
 {
@@ -130,14 +130,14 @@ h1, h2, h3, h4, h5, h6
 	-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
 	text-shadow: rgba(0,0,0,.01) 0 0 1px;
 }
-h1::selection, 
-h2::selection, 
-h3::selection, 
-h4::selection, 
-h5::selection, 
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
 h6::selection
 {
-	
+
 }
 .form-control
 {
@@ -221,7 +221,7 @@ section
 {
 	width: 187px;
 	height: 66px;
-	background: #ff4200;
+	background: #0b2e13;
 	overflow: hidden;
 }
 .line_button
@@ -238,7 +238,7 @@ section
 	line-height: 66px;
 	text-transform: uppercase;
 	letter-spacing: 6.7px;
-	
+
 }
 .button a img
 {
@@ -334,12 +334,12 @@ section
 	position: absolute;
 	top: 0;
 	left: -5px;
-	color: #ff4200;
+	color: #0b2e13;
 	z-index: -1;
 }
 .logo span:last-of-type
 {
-	color: #ff4200;
+	color: #0b2e13;
 }
 
 /*********************************
@@ -384,7 +384,7 @@ section
 }
 .nav_items li.active
 {
-	background: #ff4200;
+	background: #0b2e13;
 }
 .nav_items li.active a
 {
@@ -392,7 +392,7 @@ section
 }
 .nav_items li:hover
 {
-	background: #ff4200;
+	background: #0b2e13;
 }
 .nav_items li:hover a
 {
@@ -580,7 +580,7 @@ section
 	position: absolute;
 	top: -1px;
 	left: -5px;
-	color: #ff4200;
+	color: #0b2e13;
 	z-index: -1;
 }
 .fs_menu_list li a > span::after
@@ -644,7 +644,7 @@ section
 	right: 0px;
 	width: auto;
 	height: 74px;
-	background: #ff4200;
+	background: #0b2e13;
 	z-index: 11;
 	padding-right: 38px;
 	padding-left: 45px;
@@ -698,7 +698,7 @@ section
 	transform: translate(-50%, -50px);
 	font-size: 72px;
 	font-weight: 900;
-	color: #ff0000;
+	color: #0b2e13;
 	opacity: 0.32;
 }
 .section_title h2::before
@@ -804,7 +804,7 @@ section
 	left: 0;
 	width: 43px;
 	height: 2px;
-	background: #ff4200;
+	background: #0b2e13;
 	content: '';
 }
 
@@ -827,7 +827,7 @@ section
 .input_field:focus,
 .text_field:focus
 {
-	border: solid 2px #ff4200 !important;
+	border: solid 2px #0b2e13 !important;
 	box-shadow: none !important;
 	outline: none !important;
 }
@@ -868,7 +868,7 @@ section
 	position: relative;
 	width: 153px;
     height: 66px;
-    background: #ff4200;
+    background: #0b2e13;
     overflow: hidden;
     border: none;
     font-size: 11px;
@@ -926,21 +926,21 @@ section
 	font-style: italic !important;
 	color: #6e6e6e !important;
 }
-::-moz-placeholder /* Firefox 19+ */ 
+::-moz-placeholder /* Firefox 19+ */
 {
 	font-size: 12px !important;
 	font-weight: 400 !important;
 	font-style: italic !important;
 	color: #6e6e6e !important;
-} 
+}
 :-ms-input-placeholder
-{ 
+{
 	font-size: 12px !important;
 	font-weight: 400 !important;
 	font-style: italic !important;
 	color: #6e6e6e !important;
 }
-::input-placeholder
+:-ms-input-placeholder
 {
 	font-size: 12px !important;
 	font-weight: 400 !important;
@@ -969,7 +969,7 @@ section
 	width: 100%;
 	height: calc(100% + 30px);
 }
-	
+
 
 /*********************************
 10. Contact Sidebar
@@ -1010,7 +1010,7 @@ section
 	left: 0;
 	width: 43px;
 	height: 2px;
-	background: #ff4200;
+	background: #0b2e13;
 	content: '';
 }
 
@@ -1045,7 +1045,7 @@ section
 	left: 0;
 	width: 9px;
 	height: 9px;
-	background: #ff4200;
+	background: #0b2e13;
 	content: '';
 }
 

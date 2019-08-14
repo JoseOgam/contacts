@@ -23,59 +23,7 @@
 
     <!-- Header -->
 
-    <header class="header d-flex flex-row justify-content-end align-items-center">
-
-        <!-- Logo -->
-        <div class="logo_container mr-auto">
-            <div class="logo">
-                <a href="#">
-                    <img src="{{('images/ogam.png')}}" width="100px" height="50px" alt="logo">
-                </a>
-            </div>
-        </div>
-
-        <!-- Main Navigation -->
-        <nav class="main_nav justify-self-end">
-            <ul class="nav_items">
-                <li><a href="{{route('index.index')}}"><span>home</span></a></li>
-                <li><a href="{{route('services.index')}}"><span>services</span></a></li>
-                <li><a href="{{route('portfolio.index')}}"><span>portfolio</span></a></li>
-                <li><a href="{{route('contact.index')}}"><span>contact</span></a></li>
-            </ul>
-        </nav>
-
-        <!-- Hamburger -->
-        <div class="hamburger_container">
-            <span class="hamburger_text">Menu</span>
-            <span class="hamburger_icon"></span>
-        </div>
-
-    </header>
-
-    <!-- Menu -->
-
-    <div class="fs_menu_overlay"></div>
-    <div class="fs_menu_container">
-        <div class="fs_menu_shapes"><img src="{{('images/menu_shapes.png')}}" alt=""></div>
-        <nav class="fs_menu_nav">
-            <ul class="fs_menu_list">
-                <li><a href="{{route('index.index')}}"><span><span>H</span>Home</span></a></li>
-                <li><a href="{{route('services.index')}}"><span><span>S</span>Services</span></a></li>
-                <li><a href="{{route('portfolio.index')}}"><span><span>P</span>Portfolio</span></a></li>
-                <li><a href="{{route('contact.index')}}"><span><span>C</span>Contact</span></a></li>
-            </ul>
-        </nav>
-        <div class="fs_social_container d-flex flex-row justify-content-end align-items-center">
-            <ul class="fs_social">
-                <li><a href="#"><i class="fab fa-pinterest trans_300"></i></a></li>
-                <li><a href="#"><i class="fab fa-facebook-f trans_300"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter trans_300"></i></a></li>
-                <li><a href="#"><i class="fab fa-dribbble trans_300"></i></a></li>
-                <li><a href="#"><i class="fab fa-behance trans_300"></i></a></li>
-                <li><a href="#"><i class="fab fa-linkedin-in trans_300"></i></a></li>
-            </ul>
-        </div>
-    </div>
+@include('layouts.header')
 
     <!-- Page Top -->
 
@@ -108,70 +56,64 @@
 
     </div>
     <!-- Services -->
+    <!--cards-->
 
     <div class="services">
 
         <div class="container">
             <div class="row">
-
-                <div class="col-lg-4 service_item text-left d-flex flex-column align-items-start justify-content-start">
-                    <div class="icon_container d-flex flex-column justify-content-end">
-                        <img src="{{('images/icon_1.svg')}}" alt="">
-                    </div>
-                    <h3 class="text-dark">modern design</h3>
-                    <p class="text-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum.</p>
+                <div class="card mb-3 col-sm-6">
+                  <div>
+                      <img class="card-img-top" src="{{('images/ogam8.jpg')}}" alt="Card image cap">
+                  </div>
                 </div>
-
-                <div class="col-lg-4 service_item text-left d-flex flex-column align-items-start justify-content-start">
-                    <div class="icon_container d-flex flex-column justify-content-end">
-                        <img src="{{('images/icon_2.svg')}}" alt="">
+                <div class="card col-sm-6">
+                    <div class="card-body">
+                        <h3 class="card-title">Web Design & Development</h3>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                     </div>
-                    <h3>easy to use</h3>
-                    <p>Dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum, quam tincidunt.</p>
                 </div>
-
-                <div class="col-lg-4 service_item text-left d-flex flex-column align-items-start justify-content-start">
-                    <div class="icon_container d-flex flex-column justify-content-end">
-                        <img src="{{('images/icon_3.svg')}}" alt="">
-                    </div>
-                    <h3>well documented</h3>
-                    <p>Adipiscing elit. Phasellus vestibulum, quam tincidunt venen atis ultrices.</p>
-                </div>
-
-                <div class="col-lg-4 service_item text-left d-flex flex-column align-items-start justify-content-start">
-                    <div class="icon_container d-flex flex-column justify-content-end">
-                        <img src="{{('images/icon_4.svg')}}" alt="">
-                    </div>
-                    <h3>smart structure</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum.</p>
-                </div>
-
-                <div class="col-lg-4 service_item text-left d-flex flex-column align-items-start justify-content-start">
-                    <div class="icon_container d-flex flex-column justify-content-end">
-                        <img src="{{('images/icon_5.svg')}}" alt="">
-                    </div>
-                    <h3>elements</h3>
-                    <p>Dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum, quam tincidunt.</p>
-                </div>
-
-                <div class="col-lg-4 service_item text-left d-flex flex-column align-items-start justify-content-start">
-                    <div class="icon_container d-flex flex-column justify-content-end">
-                        <img src="{{('images/icon_6.svg')}}" alt="">
-                    </div>
-                    <h3>bold colors</h3>
-                    <p>Adipiscing elit. Phasellus vestibulum, quam tincidunt venen atis ultrices.</p>
-                </div>
-
             </div>
-
             <div class="row">
-                <div class="col text-center">
-                    <div class="button services_button">
-                        <a href="{{('services.html')}}" class="d-flex flex-row align-items-center justify-content-center">
-                            discover<img src="{{('images/arrow_right.svg')}}" alt="">
-                        </a>
+                <div class="card col-sm-6">
+                    <div class="card-body">
+                        <h3 class="card-title">Big data solutions</h3>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                     </div>
                 </div>
+                <div class="card mb-3 col-sm-6">
+                    <div>
+                        <img class="card-img-top" src="{{('images/ogam8.jpg')}}" alt="Card image cap">
+                    </div>
+                </div>
+            </div>
+    </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="margin-space"></div>
+
+    <div class="text-center">
+        <h2>Our area of expertise</h2>
+        <div class="row box-img">
+            <div class="col-sm-4" style="margin-bottom:60px;">
+                <div>
+                    <img src="{{('images/ogam8.jpg')}}" style="width:85px;height:90px;margin:35px 43px;">
+                </div>
+                <p style="margin-top:10px">Online Entertainment Industry</p>
+            </div>
+            <div class="col-sm-4" style="margin-bottom:60px">
+                <div>
+                    <img src="{{('images/ogam8.jpg')}}" style="width:115px;height:90px;margin:35px;">
+                </div>
+                <p style="margin-top:10px">Finance Technology</p>
+            </div>
+            <div class="col-sm-4" style="margin-bottom:60px">
+                <div>
+                    <img src="{{('images/ogam8.jpg')}}" style="width:85px;height:90px;margin:35px;">
+                </div>
+                <p style="margin-top:10px">Corporate administration</p>
             </div>
         </div>
     </div>
@@ -192,7 +134,7 @@
 
             <div class="row">
                 <div class="col-lg-10 offset-lg-1 text-center contact_text">
-                    <p>Dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum, quam tincidunt venen atis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum, quam tincidunt venenatis ultrices, est libero mattis ante, ac consectetur diam neque eget quam.</p>
+                    <h2 class="text-light">What inspires you?</h2>
                     <div class="button contact_button">
                         <a href="" class="d-flex flex-row align-items-center justify-content-center">contact<img
                                 src="{{('images/arrow_right.svg')}}" alt=""></a>
@@ -209,17 +151,16 @@
             <div class="row footer_content d-flex flex-sm-row flex-column align-items-center">
                 <div class="col-sm-6 cr text-sm-left text-center">
                     <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                        Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved |
+                        legit ltd
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
                 </div>
                 <div class="col-sm-6 text-sm-right text-center">
                     <div class="footer_social_container">
                         <ul class="footer_social">
-                            <li><a href="#"><i class="fab fa-pinterest trans_300"></i></a></li>
                             <li><a href="#"><i class="fab fa-facebook-f trans_300"></i></a></li>
                             <li><a href="#"><i class="fab fa-twitter trans_300"></i></a></li>
-                            <li><a href="#"><i class="fab fa-dribbble trans_300"></i></a></li>
-                            <li><a href="#"><i class="fab fa-behance trans_300"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram trans_300"></i></a></li>
                             <li><a href="#"><i class="fab fa-linkedin-in trans_300"></i></a></li>
                         </ul>
                     </div>

@@ -23,51 +23,7 @@
 <div class="">
 
     <!-- Header -->
-
-    <header class="header d-flex flex-row justify-content-end align-items-center">
-
-        <!-- Logo -->
-        <div class="logo_container mr-auto">
-            <div class="logo">
-                <a href="#">
-                    <img src="{{('images/ogam.png')}}" width="100px" height="50px" alt="">
-                </a>
-            </div>
-        </div>
-
-        <!-- Main Navigation -->
-        <nav class="main_nav justify-self-end">
-            <ul class="nav_items">
-                <li><a href="{{route('index.index')}}"><span>home</span></a></li>
-                <li><a href="{{route('services.index')}}"><span>services</span></a></li>
-                <li><a href="{{route('portfolio.index')}}"><span>portfolio</span></a></li>
-                <li><a href="{{route('contact.index')}}"><span>contact</span></a></li>
-            </ul>
-        </nav>
-
-        <!-- Hamburger -->
-        <div class="hamburger_container">
-            <span class="hamburger_text">Menu</span>
-            <span class="hamburger_icon"></span>
-        </div>
-
-    </header>
-
-    <!-- Menu -->
-
-    <div class="fs_menu_overlay"></div>
-    <div class="fs_menu_container">
-        <div class="fs_menu_shapes"><img src="{{('images/menu_shapes.png')}}" alt=""></div>
-        <nav class="fs_menu_nav">
-            <ul class="fs_menu_list">
-                <li><a href="{{route('index.index')}}"><span><span>H</span>Home</span></a></li>
-                <li><a href="{{route('services.index')}}"><span><span>S</span>Services</span></a></li>
-                <li><a href="{{route('portfolio.index')}}"><span><span>B</span>portfolio</span></a></li>
-                <li><a href="{{route('contact.index')}}"><span><span>C</span>Contact</span></a></li>
-            </ul>
-        </nav>
-    </div>
-
+    @include('layouts.header')
     <!-- Hero Slider -->
 
     <div class="home">
@@ -164,7 +120,7 @@
         </div>
     </div>
 
-    <!-- About -->
+    <!-- How we work -->
 
     <div class="about prlx_parent">
         <div class="about_background prlx" style="background-image:url({{url('images/about_background.jpg')}})"></div>
@@ -173,24 +129,27 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 offset-lg-3 text-center section_title">
-                    <h2>about our project<span>OgamSoftware</span></h2>
+                    <h2>How We Work<span>OgamSoftware</span></h2>
                 </div>
             </div>
             <div class="row">
 
-                <div class="col-lg-6">
+                <div class="col-lg-12">
                     <div class="about_text">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum, quam tincidun
-                            t venenatis ultrices, est libero mattis ante, ac consectetur diam neque eget quam. Etiam f
-                            eugiat augue et varius blandit. Praesent mattis, eros a sodales commodo, justo ipsum rutrum
-                            mauris, sit amet egestas metus.</p>
+                        <p>
+                            Great achievements happen through people and it is the people that make the business
+                            successful. Our Developers showcase their skills, share their knowledge and learn from the
+                            like-minded in an open office set up. Within an environment stimulating personal growth,
+                            self- motivation and creativity, our experts can take ownership of the processes that make
+                            both our business and our clients' businesses succeed.
+                        </p>
                             <a href="{{route('portfolio.index')}}" class="button contact_button d-flex flex-row align-items-center justify-content-center">
                                <p class="text-light"> View our Work</p>
                                 </a>
                     </div>
                 </div>
 
-                <div class="col-lg-6">
+                <!--<div class="col-lg-6">
                     <div class="skills_container">
                         <ul class="progress_bar_container col_12 clearfix">
                             <li class="pb_item">
@@ -211,7 +170,7 @@
                             </li>
                         </ul>
                     </div>
-                </div>
+                </div> -->
 
             </div>
         </div>
@@ -280,56 +239,7 @@
     </div>
     -->
     <!-- Contact -->
-
-    <div class="contact prlx_parent">
-        <!-- <div class="contact_background parallax-window" data-parallax="scroll" data-speed="0.7" data-image-src="images/contact_background.jpg"></div> -->
-        <div class="contact_background prlx" style="background-image: url({{url('images/contact_background.jpg')}});"></div>
-        <div class="contact_shapes"><img src="{{('images/contact_shape.png')}}" alt=""></div>
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-6 offset-lg-3 text-center section_title contact_title">
-                    <h2>let's work together<span>OgamSoftware</span></h2>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-10 offset-lg-1 text-center contact_text">
-                    <p>We are ready for your project, lets get in touch.</p>
-                    <div class="button contact_button">
-                        <a href="{{route('contact.index')}}" class="d-flex flex-row align-items-center justify-content-center">
-                            contact us
-                            <img src="{{('images/arrow_right.svg')}}" alt=""></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Footer -->
-
-    <footer class="footer">
-        <div class="container">
-            <div class="row footer_content d-flex flex-sm-row flex-column align-items-center">
-                <div class="col-sm-6 cr text-sm-left text-center">
-                    <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved |
-                        Ogam Software
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-                </div>
-                <div class="col-sm-6 text-sm-right text-center">
-                    <div class="footer_social_container">
-                        <ul class="footer_social">
-                            <li><a href="#"><i class="fab fa-facebook-f trans_300"></i></a></li>
-                            <li><a href="#"><i class="fab fa-twitter trans_300"></i></a></li>
-                            <li><a href="#"><i class="fab fa-instagram trans_300"></i></a></li>
-                            <li><a href="#"><i class="fab fa-linkedin-in trans_300"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+    @include('layouts.fuuter')
 
 </div>
 

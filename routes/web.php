@@ -31,6 +31,10 @@ Route::resources([
 ]);
 
 Route::resources([
+    'about-us'=>'AboutController'
+]);
+
+Route::resources([
     'services'=>'ServicesController'
 ]);
 

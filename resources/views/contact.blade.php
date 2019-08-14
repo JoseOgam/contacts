@@ -25,49 +25,7 @@
 
     <!-- Header -->
 
-    <header class="header d-flex flex-row justify-content-end align-items-center">
-
-        <!-- Logo -->
-        <div class="logo_container mr-auto">
-            <div class="logo">
-                <a href="#">
-                    <img src="{{('images/ogam.png')}}" width="100px" height="50px" alt="">
-                </a>
-            </div>
-        </div>
-
-        <!-- Main Navigation -->
-        <nav class="main_nav justify-self-end">
-            <ul class="nav_items">
-                <li><a href="{{route('index.index')}}"><span>home</span></a></li>
-                <li><a href="{{route('services.index')}}"><span>services</span></a></li>
-                <li><a href="{{route('portfolio.index')}}"><span>portfolio</span></a></li>
-                <li><a href="{{route('contact.index')}}"><span>contact</span></a></li>
-            </ul>
-        </nav>
-
-        <!-- Hamburger -->
-        <div class="hamburger_container">
-            <span class="hamburger_text">Menu</span>
-            <span class="hamburger_icon"></span>
-        </div>
-
-    </header>
-
-    <!-- Menu -->
-
-    <div class="fs_menu_overlay"></div>
-    <div class="fs_menu_container " style="background-color: #2fa360">
-        <div class="fs_menu_shapes"><img src="{{('images/menu_shapes.png')}}" alt=""></div>
-        <nav class="fs_menu_nav">
-            <ul class="fs_menu_list">
-                <li><a href="{{route('index.index')}}"><span><span>H</span>Home</span></a></li>
-                <li><a href="{{route('services.index')}}"><span><span>S</span>Services</span></a></li>
-                <li><a href="{{route('portfolio.index')}}"><span><span>P</span>Portfolio</span></a></li>
-                <li><a href="{{route('contact.index')}}"><span><span>C</span>Contact</span></a></li>
-            </ul>
-        </nav>
-    </div>
+@include('layouts.header')
     <!-- Contact Content -->
 
     <div class="contact_content">
@@ -145,18 +103,15 @@
                 <div class="col-sm-6 cr text-sm-left text-center">
                     <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved |
-                        This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by
-                        <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                        legit ltd
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
                 </div>
                 <div class="col-sm-6 text-sm-right text-center">
                     <div class="footer_social_container">
                         <ul class="footer_social">
-                            <li><a href="#"><i class="fab fa-pinterest trans_300"></i></a></li>
                             <li><a href="#"><i class="fab fa-facebook-f trans_300"></i></a></li>
                             <li><a href="#"><i class="fab fa-twitter trans_300"></i></a></li>
-                            <li><a href="#"><i class="fab fa-dribbble trans_300"></i></a></li>
-                            <li><a href="#"><i class="fab fa-behance trans_300"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram trans_300"></i></a></li>
                             <li><a href="#"><i class="fab fa-linkedin-in trans_300"></i></a></li>
                         </ul>
                     </div>
